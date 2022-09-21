@@ -111,9 +111,61 @@ else
     Console.WriteLine($"Du har {poäng} poäng.");
 }
 
+Console.WriteLine("Fråga 7: Vad använder man salt till?");
+Console.WriteLine("  a) Visar spökets fotsteg  b) Skrämmer bort spöket  c) Visar vart spöket är  d) Lyser upp spöket");
+
+answer = Console.ReadLine();
+if (answer == "a")
+{
+    poäng += 1;
+    Console.WriteLine("Du hade rätt! Men du hade tur.");
+    Console.WriteLine($"Du har {poäng} poäng.");
+}
+else
+{
+    poäng -= 1;
+    Console.WriteLine("Du hade fel! Du kan ingenting.");
+    Console.WriteLine($"Du har {poäng} poäng.");
+}
+
+Console.WriteLine("Fråga 8: Vad gör en Spirit Box?");
+Console.WriteLine("  a) Fångar spöket  b) Visar spöket  c) Får spöket att göra något  d) Får spöket att svara på frågor");
+
+answer = Console.ReadLine();
+if (answer == "d")
+{
+    poäng += 1;
+    Console.WriteLine("Du hade rätt! Bra tänkt.");
+    Console.WriteLine($"Du har {poäng} poäng.");
+}
+else
+{
+    poäng -= 1;
+    Console.WriteLine("Nope! Skyll på ping!");
+    Console.WriteLine($"Du har {poäng} poäng.");
+}
+
+Console.WriteLine("Fråga 9: Hur många typer av Equipment finns det inklusive Cursed Items?");
+Console.WriteLine("  a) 19  b) 23  c) 28  d) 31");
+
+answer = Console.ReadLine();
+if (answer == "c")
+{
+    poäng += 1;
+    Console.WriteLine("Du hade rätt! Det där var en svårt fråga");
+    Console.WriteLine($"Du har {poäng} poäng.");
+}
+else
+{
+    poäng -= 1;
+    Console.WriteLine("tyvärr så är det fel! men nära var det (tror jag)");
+    Console.WriteLine($"Du har {poäng} poäng.");
+}
+
 
 
 
 
 
 Console.ReadLine();
+
