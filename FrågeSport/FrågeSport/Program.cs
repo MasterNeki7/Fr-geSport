@@ -13,7 +13,7 @@ if (answer == "a")
 {
     poäng += 1;
     Console.WriteLine("Bra jobbat! Du får en poäng.");
-    Console.WriteLine($"Din poäng nu är {poäng}");
+    Console.WriteLine($"Du har {poäng} poäng.");
 }
 
 else
@@ -31,7 +31,7 @@ if (answer == "c")
 {
     poäng += 1;
     Console.WriteLine("Grattis du hade rätt!");
-    Console.WriteLine($"Din poäng är {poäng}.");
+    Console.WriteLine($"Du har {poäng} poäng.");
 }
 
 else
@@ -49,26 +49,67 @@ if (answer == "b")
 {
     poäng += 1;
     Console.WriteLine("Bra jobbat! Du har rätt.");
-    Console.WriteLine($"Du har nu {poäng} poäng!");
+    Console.WriteLine($"Du har {poäng} poäng.");
 }
 
 else
 {
     poäng -= 1;
     Console.WriteLine("Du hade fel! Jag måste tyvärr ta bort ett poäng.");
-    Console.WriteLine($"Du har {poäng} poäng");
+    Console.WriteLine($"Du har {poäng} poäng.");
 }
 
+Console.WriteLine("Fråga 4: Vilket spöke vet alltid vart du är (du kan inte gömma dig)");
+Console.WriteLine("  a) Spirit  b) Poltergeist  c) Deogen  d) Huntress  ");
 
+answer = Console.ReadLine();
 
+if (answer == "c")
+{
+    poäng += 1;
+    Console.WriteLine("Bra du hade rätt!");
+    Console.WriteLine($"Du har {poäng} poäng.");
+}
+else
+{
+    poäng -= 1;
+    Console.WriteLine("Du hade fel! Minus poäng för dig!");
+    Console.WriteLine($"Du har {poäng} poäng.");
+}
 
+Console.WriteLine("Fråga 5: Vilket spöke har bara en svaghet och ingen styrka?");
+Console.WriteLine("  a) Poltergeist  b) Onryo  c) Wraith  d) Spirit");
 
+answer = Console.ReadLine();
+if (answer == "d")
+{
+    poäng += 1;
+    Console.WriteLine("Du hade rätt! bra jobbat.");
+    Console.WriteLine($"Du har {poäng} poäng.");
+}
+else
+{
+    poäng -= 1;
+    Console.WriteLine("Du hade fel! sämst.");
+    Console.WriteLine($"Du har {poäng} poäng.");
+}
 
+Console.WriteLine("Fråga 6: Vilken är den största mappen i phasmophobia?");
+Console.WriteLine("  a) Tanglewood  b) Grafton Farmhouse  c) Asylum  d) Maple Lodge Campsite");
 
-
-
-
-
+answer = Console.ReadLine();
+if (answer == "c")
+{
+    poäng += 1;
+    Console.WriteLine("Du hade rätt! tjoohoo!");
+    Console.WriteLine($"Du har {poäng} poäng.");
+}
+else
+{
+    poäng -= 1;
+    Console.WriteLine("Du hade fel! nooooob");
+    Console.WriteLine($"Du har {poäng} poäng.");
+}
 
 
 
