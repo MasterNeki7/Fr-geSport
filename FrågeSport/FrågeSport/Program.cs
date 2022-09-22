@@ -145,7 +145,7 @@ else
     Console.WriteLine($"Du har {poäng} poäng.");
 }
 
-Console.WriteLine("Fråga 9: Hur många typer av Equipment finns det inklusive Cursed Items?");
+Console.WriteLine("Fråga 9: Hur många typer av Usable Items finns det inklusive Cursed Items?");
 Console.WriteLine("  a) 19  b) 23  c) 28  d) 31");
 
 answer = Console.ReadLine();
@@ -162,8 +162,42 @@ else
     Console.WriteLine($"Du har {poäng} poäng.");
 }
 
+Console.WriteLine("Fråga 10: Vilken är den svåraste mappen i spelet?");
+Console.WriteLine("  a) asylum  b) Willow Streethouse  c) Prison  d) Maple Lodge Campsite");
+
+answer = Console.ReadLine();
+if (answer == "d")
+{
+    poäng += 1;
+    Console.WriteLine("Bra jobbat du hade rätt!");
+    Console.WriteLine($"Du har {poäng} poäng");
+}
+else
+{
+    poäng -= 1;
+    Console.WriteLine("Du hade fel! Svaret är inte vad du förväntar dig");
+    Console.WriteLine($"Du har {poäng} poäng");
+}
 
 
+
+Console.WriteLine($"Din slutgiltiga poäng var {poäng}");
+if (poäng <= 0)
+    {
+        Console.WriteLine("Wow du kan inget om spelet! Jag rekommenderar att du spelar det och sen tar quizzen igen!");
+    }
+if ( poäng > 0 && poäng < 5)
+    {
+        Console.WriteLine("Du hade ganska många fel, men det är i alla fall inte minus!");
+    }
+if (poäng > 5)
+    {
+        Console.WriteLine("WOW! Du är väldigt bra på spelet!");
+    }
+if (poäng == 10)
+    {
+        Console.WriteLine("Du är bäst! Du fick alla rätt! ditt pris är........inget");
+    }
 
 
 
